@@ -1,0 +1,16 @@
+.input {
+    text-align: right;
+    /* margin-top:5px; */
+}
+
+
+.input input {
+    border: #0051f3 solid 2px;
+    outline: none;
+    border-radius: 20px;
+}
+
+/* .table {
+    height: 500px;
+ 
+} */

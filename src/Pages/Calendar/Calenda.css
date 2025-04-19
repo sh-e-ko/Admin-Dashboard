@@ -1,0 +1,61 @@
+.demo-app h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.demo-app ul {
+    margin: 0;
+    padding: 0 0 0 1.5em;
+}
+
+.demo-app li {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+.demo-app b {
+    /* used for event dates/times */
+    margin-right: 3px;
+}
+
+.demo-app a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.demo-app {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    min-height: 100vh;
+    height: 100%;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.demo-app-sidebar {
+    width: 300px;
+    height: 600px;
+    line-height: 1.5;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 25px;
+}
+
+.demo-app-sidebar-section {
+    padding: 2em;
+}
+
+.demo-app-main {
+    flex-grow: 1;
+    padding: 3em;
+    max-width: calc(100% - 300px);
+}
+
+.fc {
+    /* the calendar root */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+}

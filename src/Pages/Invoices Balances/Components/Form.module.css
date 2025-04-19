@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container input {
+    outline: none;
+    padding: 20px;
+    height: 20px;
+    outline: none;
+    border: 2px solid #A7ACB1;
+    border-radius: 30px;
+    color: rgb(255, 255, 255);
+    background-color: #0f1535;
+}
+
+.container input:focus {
+    outline: none;
+    border: 2px solid #ffffff;
+}
+
+
+.container span {
+    font-size: 15px;
+    color: rgb(35, 46, 148);
+    margin-left: 20px;
+}
+.contant{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

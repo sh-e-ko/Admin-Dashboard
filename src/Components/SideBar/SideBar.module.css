@@ -1,0 +1,99 @@
+.sidebar {
+    width: 250px;
+    min-height: 100vh;
+
+    background-color: rgb(28, 33, 63);
+}
+
+.sidebarClose {
+    width: 50px;
+    /* margin-top: 60PX;
+    height: calc(100vh - 60px); */
+    min-height: 100vh;
+    background-color: rgb(28, 33, 63);
+
+}
+
+hr {
+    color: rgb(255, 255, 255)
+}
+
+.icons {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+
+}
+
+ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+}
+
+
+
+.ul {
+
+    display: flex;
+    align-items: end;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-left: 15px;
+    transition: all 0.5s;
+}
+
+.ul:hover {
+    width: 85%;
+    background-color: #ffffff0D;
+    padding: 6px 16px;
+}
+
+.ulclose {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.ulclose:hover {
+    background-color: #ffffff24;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.imgclose {
+    width: 33px;
+    height: 33px;
+    margin-top: 20px;
+    border: 2PX solid gray;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.img {
+    width: 88PX;
+    height: 88PX;
+    margin-top: 20px;
+    border: 2PX solid #CCC;
+    border-radius: 50%;
+    object-fit: cover;
+}
