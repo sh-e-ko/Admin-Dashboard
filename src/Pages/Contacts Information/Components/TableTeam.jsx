@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Button, ButtonToolbar } from 'react-bootstrap';
 import Table from 'react-bootstrap/Table';
 import { UsersApi } from '../../../Api/UsersApi';
 import style from './TableTeam.module.css'
@@ -36,8 +37,16 @@ export default function TableTeam()
                     value={searchTerm}
                     onChange={(e) => setSearchTerm(e.target.value)}
                     style={{ marginBottom: '10px', padding: '5px', width: '300px' }} />
-                <span>x</span><span>x</span>
             </div >
+            <div>
+                <Button>
+
+                </Button>
+                <Button>
+
+                </Button>
+            </div>
+
             <div>
                 <Table striped bordered hover>
                     <thead>

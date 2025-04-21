@@ -4,12 +4,41 @@
 }
 
 
-.input input {
+/* .input input {
     border: #0051f3 solid 2px;
     outline: none;
     border-radius: 20px;
+} */
+
+ .input input {
+    margin-right: -2rem;
+    width: 650px;
+    padding: 0.7rem 1rem;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+    height: 40px;
 }
 
+.input input:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input input::placeholder {
+    color: #fff;
+} 
+span{
+    color: #fff;
+}
 /* .table {
     height: 500px;
  

@@ -15,7 +15,7 @@
 
 }
 
- .input input {
+/* .input input {
     width: 100%;
     outline: none;
     padding: 25px;
@@ -30,12 +30,36 @@
  input:focus {
     outline: none;
     border: 2px solid #ffffff;
+} */
+.input input {
+    width: 100%;
+    padding: 12px 45px 12px 15px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 16px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input input:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.input input::placeholder {
+    color: #fff;
 }
 
 
 .input span {
     font-size: 15px;
-    color:#A7ACB1;
+    color: #A7ACB1;
     margin-left: 20px;
 }
 
@@ -48,10 +72,37 @@
 .inputName .input {
     width: 80%;
 }
-button{
+
+/* button{
     text-align: center;
     width: 30%;
     color: #ffffff;
     border-radius: 30px;
     margin: auto;
+} */
+button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 30px rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }

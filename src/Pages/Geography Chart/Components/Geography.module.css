@@ -1,3 +1,7 @@
 .Geography{
     height: 600px;
+    width: 800px;
+    place-self: center;
+    border: 1px solid #fff;
+    margin-top: 40px;
 }

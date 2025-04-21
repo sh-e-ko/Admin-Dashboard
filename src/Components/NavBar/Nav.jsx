@@ -1,7 +1,10 @@
 import React from 'react'
 import style from './Nav.module.css'
 import { CiMenuFries } from "react-icons/ci";
-import { FaHome } from "react-icons/fa";
+import { CiSearch } from "react-icons/ci";
+import { GrSettingsOption } from "react-icons/gr";
+import { HiUserCircle } from "react-icons/hi";
+import { CiBellOn } from "react-icons/ci";
 export default function Nav({ show, setshow })
 {
   return (
@@ -15,14 +18,14 @@ export default function Nav({ show, setshow })
       {/* input search */}
       <div className={style.inputSearch}>
         <input type="text" placeholder='search' />
-        <FaHome className={style.inputicon} />
+        <CiSearch className={style.inputicon} />
       </div>
 
       {/* icons nav bar */}
       <div className={style.Navicons}>
-        <FaHome />
-        <FaHome />
-        <FaHome />
+        <CiBellOn />
+        <GrSettingsOption />
+        <HiUserCircle />
       </div>
 
 

@@ -3,28 +3,38 @@ import style from './SideBar.module.css'
 import { Link } from 'react-router-dom';
 import { FaHome } from "react-icons/fa";
 import img from '../../assets/Untitled-1.png'
+import { LuCircleUserRound } from "react-icons/lu";
+import { FiUsers } from "react-icons/fi";
+import { LuFileUser } from "react-icons/lu";
+import { LuUserRound } from "react-icons/lu";
+import { FaCalendarAlt } from "react-icons/fa";
+import { FaQuestionCircle } from "react-icons/fa";
+import { IoStatsChartSharp } from "react-icons/io5";
+import { FaChartPie } from "react-icons/fa";
+import { LiaChartLineSolid } from "react-icons/lia";
+import { FaMap } from "react-icons/fa";
 export default function SideBar({ show })
 {
   const sec1 = [
 
     { text: "Dashboard", icon: <FaHome />, path: "/" },
-    { text: "Manage Team", icon: <FaHome />, path: "/Manage Team" },
-    { text: "Information", icon: <FaHome />, path: "/Contacts Information" },
-    { text: "Invoices Balances", icon: <FaHome />, path: "/Invoices Balances" },
+    { text: "Manage Team", icon: <FiUsers />, path: "/Manage Team" },
+    { text: "Information", icon: <LuCircleUserRound />, path: "/Contacts Information" },
+    { text: "Invoices Balances", icon: <LuFileUser />, path: "/Invoices Balances" },
   ]
   const sec2 = [
 
-    { text: "Profile Form", icon: <FaHome />, path: "/Profile Form" },
-    { text: "Calendar", icon: <FaHome />, path: "/Calendar" },
-    { text: "FAQ Page", icon: <FaHome />, path: "/FAQ Page" },
+    { text: "Profile Form", icon: <LuUserRound />, path: "/Profile Form" },
+    { text: "Calendar", icon: <FaCalendarAlt />, path: "/Calendar" },
+    { text: "FAQ Page", icon: <FaQuestionCircle />, path: "/FAQ Page" },
 
   ]
   const sec3 = [
 
-    { text: "Bar Chart", icon: <FaHome />, path: "/Bar Chart" },
-    { text: "Pie Chart", icon: <FaHome />, path: "/Pie Chart" },
-    { text: "Line Chart", icon: <FaHome />, path: "/Line Chart" },
-    { text: "Geography Chart", icon: <FaHome />, path: "/Geography Chart" }
+    { text: "Bar Chart", icon: <IoStatsChartSharp />, path: "/Bar Chart" },
+    { text: "Pie Chart", icon: <FaChartPie />, path: "/Pie Chart" },
+    { text: "Line Chart", icon: <LiaChartLineSolid />, path: "/Line Chart" },
+    { text: "Geography Chart", icon: <FaMap />, path: "/Geography Chart" }
   ]
   return (
     <div className={show ? style.sidebarClose : style.sidebar}>
